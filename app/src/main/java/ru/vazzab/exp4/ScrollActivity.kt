@@ -19,7 +19,7 @@ class ScrollActivity : AppCompatActivity() {
         val container = findViewById<LinearLayout>(R.id.content)
         val inflater = LayoutInflater.from(this)
 
-        repeat(100) {
+        repeat(20) {
             val itemView = inflater.inflate(R.layout.item2, container, false)
             container.addView(itemView)
         }

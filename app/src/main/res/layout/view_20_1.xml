@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view20">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/smbd_stop_me"
-        android:textStyle="bold"
-        android:autoLink="all"
-        android:linksClickable="true"
-
+    <ImageView
+        android:id="@+id/imageAndroid"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/android"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textSmart_think"
 
         />
-</FrameLayout>
+    <TextView
+        android:id="@+id/textSmart_think"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/smbd_stop_me"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnBackground"
+        android:autoLink="web|email|phone"
+        android:linksClickable="true"
+        android:lineSpacingExtra="4sp"
+        app:layout_constraintTop_toBottomOf="@id/imageAndroid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/backButton"
+
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        />
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
