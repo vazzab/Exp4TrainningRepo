@@ -3,9 +3,9 @@ package ru.vazzab.exp4
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-class View20_1Activity : AppCompatActivity() {
+class View20Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_20_1) // Привязываем макет
+        setContentView(R.layout.view_20_1)
     }
 }

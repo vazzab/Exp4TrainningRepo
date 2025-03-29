@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/root">
 
     <FrameLayout
         android:id="@+id/title"
@@ -22,11 +23,11 @@
         app:barrierDirection="top"
         app:constraint_referenced_ids="button1,button2,button3" />
 
-    <TextView
+    <Button
         android:id="@+id/button1"
         android:layout_width="250dp"
         android:layout_height="55dp"
-        android:background="#FFD900"
+
         android:gravity="center"
         android:text="SCROLL"
         android:textSize="24sp"
@@ -37,12 +38,12 @@
         app:layout_constraintVertical_chainStyle="spread" />
 
 
-    <TextView
+    <Button
         android:id="@+id/button2"
         android:layout_width="250dp"
         android:layout_height="55dp"
         android:layout_marginTop="25dp"
-        android:background="#FFD900"
+
         app:layout_constraintBottom_toTopOf="@id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,12 +54,12 @@
         android:textStyle="bold"
         android:gravity="center"/>
 
-    <FrameLayout
+    <Button
         android:id="@+id/button3"
         android:layout_width="250dp"
         android:layout_height="55dp"
         android:layout_marginTop="25dp"
-        android:background="#FFD900"
+
         app:layout_constraintBottom_toTopOf="@id/box1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
