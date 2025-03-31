@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class View20Activity : AppCompatActivity() {
+class Lesson20Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.view_20_1)
+        setContentView(R.layout.lesson20view)
 
         val backButton = findViewById<Button>(R.id.backButton)
         backButton.setOnClickListener {

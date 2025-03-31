@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ScrollActivity" />
-        <activity android:name=".View20Activity" />
+        <activity android:name=".Lesson20Activity" />
 
     </application>
 
