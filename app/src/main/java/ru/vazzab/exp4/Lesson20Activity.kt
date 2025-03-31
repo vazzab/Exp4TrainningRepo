@@ -2,6 +2,7 @@ package ru.vazzab.exp4
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class Lesson20Activity : AppCompatActivity() {
@@ -12,6 +13,11 @@ class Lesson20Activity : AppCompatActivity() {
         val backButton = findViewById<Button>(R.id.backButton)
         backButton.setOnClickListener {
             finish() // Закрывает текущую Activity и возвращает в предыдущую
+        }
+
+        val mainButton = findViewById<Button>(R.id.lesson20view_main_button)
+        mainButton.setOnClickListener {
+            Toast.makeText(this, "Я буду android-разработчиком!", Toast.LENGTH_SHORT).show()
         }
     }
 }

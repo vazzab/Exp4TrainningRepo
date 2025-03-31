@@ -11,13 +11,16 @@
         android:id="@+id/imageAndroid"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/android"
+        android:layout_marginStart="@dimen/test_margin"
+        android:layout_marginTop="@dimen/test_margin"
+        android:contentDescription="@null"
+        android:src="@drawable/android_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/backButton"/>
 
     <ScrollView
+        android:id="@+id/textSmart_think_scroll"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="30dp"
@@ -25,7 +28,7 @@
         app:layout_constraintStart_toEndOf="@id/imageAndroid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/backButton">
+        app:layout_constraintBottom_toTopOf="@id/lesson20view_main_button">
 
         <TextView
             android:id="@+id/textSmart_think"
@@ -47,11 +50,22 @@
     </ScrollView>
 
     <Button
+        android:id="@+id/lesson20view_main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/lesson20view_main_button"
+        app:layout_constraintBottom_toTopOf="@id/backButton"
+        app:layout_constraintEnd_toEndOf="@id/textSmart_think_scroll"
+        app:layout_constraintStart_toStartOf="@id/textSmart_think_scroll"
+        app:layout_constraintTop_toBottomOf="@id/textSmart_think_scroll" />
+
+    <Button
         android:id="@+id/backButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
-        android:text="Назад"
+        android:text="@string/button_Back"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

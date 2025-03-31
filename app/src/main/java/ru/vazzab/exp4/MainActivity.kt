@@ -22,5 +22,7 @@ class MainActivity : AppCompatActivity() {
         button2.setOnClickListener {
             startActivity(Intent(this, Lesson20Activity::class.java))
         }
+
+
     }
 }
