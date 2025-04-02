@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
+    
     <ImageView
         android:id="@+id/imageAndroid"
         android:layout_width="300dp"
@@ -51,6 +51,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="@string/lesson20view_main_button"
+        android:textColor="@color/black"
+        android:background="?android:attr/selectableItemBackground"
         app:layout_constraintBottom_toTopOf="@id/backButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -21,16 +21,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="top"
-        app:constraint_referenced_ids="button1,button2,button3" />
+        app:constraint_referenced_ids="button1,button2,button3,button4" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="250dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
 
         android:gravity="center"
         android:text="SCROLL"
-        android:textSize="24sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toTopOf="@id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +41,7 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="250dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
 
         app:layout_constraintBottom_toTopOf="@id/button3"
@@ -50,7 +50,7 @@
         app:layout_constraintTop_toBottomOf="@id/button1"
         app:layout_constraintVertical_chainStyle="spread"
         android:text="VIEW20_1"
-        android:textSize="24sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         android:gravity="center"/>
 
@@ -59,6 +59,9 @@
         android:layout_width="250dp"
         android:layout_height="55dp"
         android:layout_marginTop="25dp"
+        android:text="@string/cardview"
+        android:textSize="15sp"
+        android:textStyle="bold"
 
         app:layout_constraintBottom_toTopOf="@id/box1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,12 +69,27 @@
         app:layout_constraintTop_toBottomOf="@id/button2"
         app:layout_constraintVertical_chainStyle="spread" />
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:text="Material Design"
+        android:textSize="15sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toTopOf="@id/bottom_barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button3"
+        app:layout_constraintVertical_chainStyle="spread" />
+
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/bottom_barrier"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="button1,button2,button3" />
+        app:constraint_referenced_ids="button1,button2,button3,button4" />
 
     <FrameLayout
         android:id="@+id/box1"
